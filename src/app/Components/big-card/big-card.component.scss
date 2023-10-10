@@ -1,0 +1,80 @@
+.content-Big-Card {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-left: 10rem;
+  width: 60%;
+}
+
+.content-Big-Card > p {
+  color: #01ac5c;
+  font-weight: 900;
+}
+
+  .img-Big-Card {
+    border: 5px solid grey;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    height: auto !important;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .img-Big-Card > img {
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+    }
+
+  .title-Big-Card {
+    width: 78%;
+  }
+
+  .title-Big-Card > h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+  }
+
+  .person-Big-Card {
+    align-items: center;
+    display: flex;
+    margin-right: 2rem;
+    width: 78%;
+  }
+
+    .face-Big-Card {
+      width: 7vh; /* Defina a largura desejada para o rosto */
+      height: 7vh; /* Defina a altura desejada para o rosto */
+      overflow: hidden; /* Esconde as partes indesejadas da imagem */
+      border-radius: 50%; /* Para arredondar a imagem, se necessário */
+    }
+
+    .face-Big-Card > img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover; /* Mantém o aspect ratio e preenche o contêiner */
+    }
+
+    .description-Person-Big-Card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-left: 1rem;
+    }
+
+    .description-Person-Big-Card > p {
+      font-size: 0.9rem;
+      color: #9e9e9e;
+    }
+
+    .description-Person-Big-Card > p > strong {
+      font-size: 0.9rem;
+      color: #7a7a7a;
+      font-weight: 900;
+      text-transform: capitalize;
+    }

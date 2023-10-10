@@ -1,0 +1,59 @@
+.content-Small-Card {
+  border: 1px solid red;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  width: 30%;
+}
+
+  .card-Small-Card > h3 {
+    font-size: 1rem;
+    color: #01ac5c;
+  }
+
+  .card-Small-Card > h2 {
+    font-size: 1.1rem;
+    color: #3d3d3d;
+  }
+
+  .person-Small-Card {
+    align-items: center;
+    display: flex;
+    margin-right: 2rem;
+    width: 78%;
+  }
+
+    .face-Small-Card {
+      width: 7vh; /* Defina a largura desejada para o rosto */
+      height: 7vh; /* Defina a altura desejada para o rosto */
+      overflow: hidden; /* Esconde as partes indesejadas da imagem */
+      border-radius: 50%; /* Para arredondar a imagem, se necessário */
+    }
+
+    .face-Small-Card > img {
+      width: 130%;
+      height: 130%;
+      object-fit: cover; /* Mantém o aspect ratio e preenche o contêiner */
+    }
+
+    .description-Person-Small-Card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      margin-left: 1rem;
+    }
+
+    .description-Person-Small-Card > p {
+      font-size: 0.9rem;
+      color: #9e9e9e;
+    }
+
+    .description-Person-Small-Card > p > strong {
+      font-size: 0.9rem;
+      color: #7a7a7a;
+      font-weight: 900;
+      text-transform: capitalize;
+    }
