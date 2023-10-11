@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -6,7 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./big-card.component.scss']
 })
 export class BigCardComponent {
-  lanternaFirst: string = 'https://th.bing.com/th/id/OIP.ZA3pgqj_SaPzK5Fnnm9ikAHaEK?w=321&h=180&c=7&r=0&o=5&pid=1.7'
+  @Input()
+  imageNews: string = ''
 
-  facePicture: string = 'https://th.bing.com/th/id/OIP.weXnFJIY5611bJCfLe8LjAHaEK?w=282&h=180&c=7&r=0&o=5&pid=1.7'
+  @Input()
+  typeCard: string = ''
+
+  @Input()
+  titleCard: string = ""
+
+  @Input()
+  facePicture: string = ""
+
+  @Input()
+  authorCard: string = ''
+
+  @Input()
+  roleCard: string = ' '
+
+  @Input()
+  id:string = '0'
 }

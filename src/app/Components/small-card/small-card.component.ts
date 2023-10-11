@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-card.component.scss']
 })
 export class SmallCardComponent {
-  facePicture: string = 'https://th.bing.com/th/id/OIP.weXnFJIY5611bJCfLe8LjAHaEK?w=282&h=180&c=7&r=0&o=5&pid=1.7'
+  @Input()
+  facePicture: string = ''
+  @Input()
+  typeCard: string = ''
+  @Input()
+  titleCard: string = ''
+  @Input()
+  authorCard: string = ''
+  @Input()
+  roleCard: string = ''
+  @Input()
+  id:string = '0'
 }

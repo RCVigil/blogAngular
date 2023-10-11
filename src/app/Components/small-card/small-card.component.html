@@ -1,16 +1,21 @@
 <div class="content-Small-Card">
-  <h1>Mais Populares</h1>
-  <div class="card-Small-Card">
-    <h3>Sale</h3>
-    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, autem nobis laboriosam aliquam dolorem amet doloremque.</h2>
+  <a [routerLink]="['content', id]" class="small-Card__content">
+
+    <div class="card-Small-Card">
+      <h3>{{typeCard}}</h3>
+      <h2>{{titleCard}}</h2>
+    </div>
+    <div class="person-Small-Card">
+      <div class="face-Small-Card">
+        <img [src]="facePicture" alt="">
+      </div>
+      <div class="description-Person-Small-Card">
+        <p>by <strong>{{authorCard}}</strong></p>
+        <p class="role-Small-Card">{{roleCard}}</p>
+      </div>
+    </div>
+  </a>
+  <div class="hr-Small-Card">
+    <hr>
   </div>
-  <div class="person-Small-Card">
-    <div class="face-Small-Card">
-      <img [src]="facePicture" alt="">
-    </div>
-    <div class="description-Person-Small-Card">
-      <p>by <strong>Lanterna Verde</strong></p>
-      <p>CEO</p>
-    </div>
-    </div>
 </div>

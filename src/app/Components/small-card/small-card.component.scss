@@ -10,6 +10,7 @@
   .card-Small-Card > h3 {
     font-size: 1rem;
     color: #01ac5c;
+    text-transform: uppercase;
   }
 
   .card-Small-Card > h2 {
@@ -56,3 +57,18 @@
       font-weight: 900;
       text-transform: capitalize;
     }
+
+      .role-Small-Card {
+        text-transform: uppercase;
+      }
+
+  .hr-Small-Card {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+.hr-Small-Card > hr {
+  width: 90%;
+  margin: 3vh 0 ;
+}
